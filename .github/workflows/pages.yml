@@ -42,15 +42,10 @@ jobs:
       - name: build
         run: npx slidev build
 
-      - name: Setup build for deployment
-        run: |
-          mkdir -p _build
-          cp -r dist _build/
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: '_build'
+          path: 'dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
