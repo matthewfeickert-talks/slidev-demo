@@ -39,8 +39,11 @@ jobs:
       - name: install
         run: npm ci
 
+      - name: env
+        run: env
+
       - name: build
-        run: npx slidev build
+        run: npx slidev build --base /${{ github.event.repository.name }}/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
