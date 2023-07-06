@@ -352,9 +352,7 @@ This should be 3 columns with images in each
 
 Column 1
 
-<img src=figures/JAX_logo.png style="width: 80%">
-
-![](figures/JAX_logo.png)
+<img src=/figures/JAX_logo.png style="width: 80%">
 
 </div>
 <div>
