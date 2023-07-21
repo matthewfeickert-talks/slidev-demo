@@ -345,19 +345,21 @@ $$
 
 # Example three column
 
-This should be 3 columns with images in each
-
-<div grid="~ cols-3 gap-2">
+<div class="grid grid-cols-[30%_1fr_30%] gap-4">
 <div>
 
 Column 1
 
+(30% width of parent container)
+
 <img src=/figures/JAX_logo.png style="width: 80%">
+
+c.f. https://sli.dev/guide/faq.html#grids
 
 </div>
 <div>
 
-Column 2
+Column 2 (auto fit)
 
 <img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true">
 
@@ -367,6 +369,10 @@ Column 2
 
 </div>
 <div>
+
+Column 3
+
+(30% width of parent container)
 
 <img border="rounded" src="https://github.com/scikit-hep/pyhf/blob/a28d1a3b293efb3d034b0d55a75b9735d0e5d46f/docs/_static/img/pyhf-logo.svg?raw=true">
 
